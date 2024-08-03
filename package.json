@@ -6,11 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "next lint"
   },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.5"
+=======
+    "test": "next build & next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "antd": "^5.19.4",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18"
+>>>>>>> 582923fc9109f9c899af384e94448330d823f549
   }
 }

@@ -2,4 +2,35 @@
     border: 2px;
     border-color: red;
     border-style: solid;
+    display: flex;
+}
+
+.header {    
+    border: 2px;
+    border-color: orange;
+    border-style: solid;
+    height: 70px;
+    width: 80%;
+    position: absolute;
+    margin-left: 20%;
+}
+
+.sidebar {
+    border: 2px;
+    border-color: green;
+    border-style: solid;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+.main {
+    border: 2px;
+    border-color: blue;
+    border-style: solid;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 70px;
 }

@@ -73,6 +73,7 @@ li:hover {
     cursor: pointer;
     border-radius: 5px;
     background-color: rgb(54 54 54);
+    color: white;
 }
 
 /* second side bar */
@@ -85,7 +86,7 @@ li:hover {
     width: 300px;
     height: 100%;
     position: fixed;
-    background-color: rgb(20 20 20);
+    /* background-color: rgb(20 20 20); */
 }
 
 .secondUpper {
@@ -132,8 +133,36 @@ li:hover {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    width: 100px;
-    padding: 15px 30px 0 0;
+    width: 120px;
+    padding: 15px 10px 0 0;
+}
+
+.dark {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    /* border: 1px;
+    border-color: salmon;
+    border-style: solid; */
+    padding: 3px 0 3px 5px;
+}
+
+.dark:hover {
+    cursor: pointer;
+}
+    
+.search {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    /* border: 1px;
+    border-color: salmon;
+    border-style: solid; */
+    padding: 3px 0 3px 5px;
+}
+
+.search:hover {
+    cursor: pointer;
 }
 
 .main {

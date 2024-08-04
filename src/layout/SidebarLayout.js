@@ -16,7 +16,7 @@ export default function SidebarLayout() {
 
     // store
     const {
-        LayoutStore: { modeStyle, setModeStyle, mode_side },
+        LayoutStore: { modeStyle, setModeStyle, mode_side, mode_border, mode_font, mode_logo},
     } = useStore();
 
     // get list data
@@ -28,9 +28,9 @@ export default function SidebarLayout() {
 
     return (
         <>
-            <div className="sidebar" style={{backgroundColor: `${mode_side}`}}>
+            <div className="sidebar" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
                 <div className="upper">
-                    <img id="logo" alt="64" src="/image/logo_white.png" onClick={() => router.push('/')} />
+                    <img id="logo" alt="64" src={`/image/${mode_logo}.png`} onClick={() => router.push('/')} />
                 </div>
                 <div className="wrapper_list">
                     <br/>

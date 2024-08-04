@@ -22,7 +22,7 @@ function AppLayout({ children }) {
 
     // state
     const {
-        LayoutStore: { modeStyle, setModeStyle },
+        LayoutStore: { modeStyle, setModeStyle, mode_font},
     } = useStore();
 
     return (

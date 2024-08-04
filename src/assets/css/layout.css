@@ -173,6 +173,15 @@ li:hover {
     height: 70%;
     position: relative;
     margin-left: 550px;
+    
+}
+
+.contents {
+    border: 1px;
+    border-color: blue;
+    border-style: solid;
+    margin: 0 auto;
+    width: 900px;
 }
 
 .footer {

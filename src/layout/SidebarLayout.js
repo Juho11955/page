@@ -37,15 +37,15 @@ export default function SidebarLayout() {
                     <div className="default_list">
                         <ul>
                             <li>
-                                <BiSolidHome />&nbsp;
+                                <BiSolidHome />&nbsp;&nbsp;
                                 <spen style={{fontSize: "large"}}>Home</spen>
                             </li>
                             <li>
-                                <MdMedicalInformation />&nbsp;
+                                <MdMedicalInformation />&nbsp;&nbsp;
                                 <spen style={{fontSize: "large"}}>About</spen>
                             </li>
                             <li>
-                                <MdViewDay />&nbsp;
+                                <MdViewDay />&nbsp;&nbsp;
                                 <spen style={{fontSize: "large"}}>Recent</spen>
                             </li>                        
                         </ul>

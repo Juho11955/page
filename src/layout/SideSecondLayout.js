@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
 
 
-export default function SidebarLayout() {
+export default function SideSecondLayout() {
 
     // router
     const router = useRouter();
@@ -14,6 +14,7 @@ export default function SidebarLayout() {
     // store
     const {
         LayoutStore: { modeStyle, setModeStyle, mode_side, mode_border, mode_font},
+        NaviStore: { navi, setNavi },
     } = useStore();
 
     // get list data
@@ -30,7 +31,7 @@ export default function SidebarLayout() {
             <div className="secondUpper">
                     <span>Recent</span>
                     <div style={{width: "130px"}}></div>
-
+                {navi}
             </div>
         </div>
     </>

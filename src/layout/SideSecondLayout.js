@@ -14,7 +14,6 @@ export default function SideSecondLayout() {
     // store
     const {
         LayoutStore: { modeStyle, setModeStyle, mode_side, mode_border, mode_font},
-        NaviStore: { navi, setNavi },
     } = useStore();
 
     // get list data
@@ -31,7 +30,6 @@ export default function SideSecondLayout() {
             <div className="secondUpper">
                     <span>Recent</span>
                     <div style={{width: "130px"}}></div>
-                {navi}
             </div>
         </div>
     </>

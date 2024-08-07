@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
 
 
-export default function SideSecondLayout() {
+export default function SideSecondLayout({children}) {
 
     // router
     const router = useRouter();
@@ -31,6 +31,7 @@ export default function SideSecondLayout() {
                     <span>Recent</span>
                     <div style={{width: "130px"}}></div>
             </div>
+            {children}
         </div>
     </>
     );

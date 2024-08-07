@@ -1,24 +1,37 @@
-import { useStore } from "@/hooks/useStore";
-import styles from "../../page.module.css";
+"use client"; // this is a client component
 
-export default function Dir(params) {
+import "@/assets/css/layout.css"
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useStore } from "@/hooks/useStore";
+
+
+export default function SideSecondLayout() {
+
+    // router
+    const router = useRouter();
 
     // store
     const {
-        NaviStore: { navi, setNavi },
+        LayoutStore: { modeStyle, setModeStyle, mode_side, mode_border, mode_font},
     } = useStore();
 
-    setNavi(params.params.dir);
+    // get list data
+    const [mainList, setMainList] = useState([{id: 1, name: "first", src: "/image/logo_white.png"}, {id: 2, name: "second", src: "/image/logo_white.png"}, {id: 3, name: "third", src: "/image/logo_white.png"}, {id: 3, name: "third", src: "/image/logo_white.png"}]);
 
-  console.log(params);
-  console.log(params.params);
-  console.log(params.params.dir);
+    useEffect(() => {
+        console.log(`${mainList}`)
+    }, [mainList])
 
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        {params.params.dir}
-      </div>
-    </main>
-  );
+
+    return (
+    <>
+        <div className="secondSidebar" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
+            <div className="secondUpper">
+                    <span>Recent</span>
+                    <div style={{width: "130px"}}></div>
+            </div>
+        </div>
+    </>
+    );
 }

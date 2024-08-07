@@ -3,7 +3,6 @@
 import "@/assets/css/layout.css"
 import HeaderLayout from "./HeaderLayout";
 import SidebarLayout from "./SidebarLayout";
-import SideSecondLayout from "./SideSecondLayout"
 import MainLayout from "./MainLayout";
 import FooterLayout from "./FooterLayout";
 import React from "react";
@@ -29,7 +28,7 @@ function AppLayout({ children }) {
         <>
             <div className="app">
                 <SidebarLayout />
-                <SideSecondLayout />
+                {/* <SideSecondLayout /> */}
                 <div className="right_side">
                     <HeaderLayout />
                     <MainLayout>

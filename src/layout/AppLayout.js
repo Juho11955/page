@@ -30,11 +30,11 @@ function AppLayout({ children }) {
                 <SidebarLayout />
                 {/* <SideSecondLayout /> */}
                 <div className="right_side">
-                    <HeaderLayout />
                     <MainLayout>
                         {children}
+                        {/* <HeaderLayout />
+                        <FooterLayout /> */}
                     </MainLayout>
-                    <FooterLayout />
                 </div>
             </div>
         </>

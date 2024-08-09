@@ -13,9 +13,9 @@ export default function MainLayout({ children }) {
     return (
         <>
             <div className="main" style={{backgroundColor: `${mode_main}`, color: `${mode_font}`}}>
-                <div className="contents">
+                {/* <div className="contents"> */}
                     {children}
-                </div>
+                {/* </div> */}
             </div>
         </>
     );

@@ -7,9 +7,11 @@ import { useRouter } from "next/navigation";
 // icons
 import { BiSolidHome } from "react-icons/bi";
 import { MdMedicalInformation, MdViewDay } from "react-icons/md";
-import { useStore } from "@/hooks/useStore";
 
-export default function SidebarLayout() {
+import { useStore } from "@/hooks/useStore";
+import { observer } from "mobx-react";
+
+function SidebarLayout() {
 
     // router
     const router = useRouter();
@@ -72,3 +74,5 @@ export default function SidebarLayout() {
         </>
     );
 }
+
+export default observer(SidebarLayout);

@@ -1,14 +1,3 @@
-/* global */
-.app {
-    /* border: 1px;
-    border-color: red;
-    border-style: solid; */
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(15 15 15);
-    font-family: 'Jost', sans-serif;
-}
-
 /* left_side */
 .sidebar {
     /* border-right: 1px;
@@ -46,14 +35,6 @@
     cursor: pointer;
 }
 
-/* .default_list {
-    margin: 0 25px;
-}
-
-.list {
-    margin: 0 25px;
-} */
-
 ul {
     list-style: none;
     padding-left: 0px;
@@ -76,47 +57,19 @@ li:hover {
     color: white;
 }
 
-/* second side bar */
-.secondSidebar {
-    /* border-right: 1px;
-    border-color: rgb(63 63 63);
-    border-style: solid; */
-    border-right: 1px rgb(63 63 63) solid;
-    /* margin-left: 250px; */
-    width: 300px;
-    height: 100%;
-    position: relative;
-    float: left;
-    /* position: fixed; */
-    /* background-color: rgb(20 20 20); */
-}
-
-.secondUpper {
-    height: 60px;
+/* main */
+.main {
+    margin-left: 250px;
     width: auto;
-    justify-content: left;
-    padding: 20px 0 0 25px;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-
 }
 
-/* right_side */
-.right_side {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    /* flex-wrap: wrap; */
-}
-
+/* header */
 .header {    
     border: 1px;
     border-color: orange;
     border-style: solid;
-
     height: 60px;
-    width: 70%;
+    width: auto;
     position: relative;
     /* margin-left: 550px; */
     display: flex;
@@ -169,26 +122,8 @@ li:hover {
     cursor: pointer;
 }
 
-.main {
-    /* border: 1px;
-    border-color: blue;
-    border-style: solid; */
-    width: auto;
-    /* height: 70%; */
-    position: relative;
-    margin-left: 250px;
-    
-}
 
-.contents {
-    /* border: 1px;
-    border-color: blue;
-    border-style: solid; */
-    /* margin: 0 auto; */
-    margin-left: 300px;
-    width: auto;
-}
-
+/* footer */
 .footer {
     border: 1px;
     border-color: rgb(63 63 63);
@@ -201,10 +136,3 @@ li:hover {
     /* margin-left: 300px; */
     background-color: rgb(26 26 26);
 }
-
-.main_contents {
-    margin-left: 300px;
-    width: 100%;
-    height: 70%;
-}
-

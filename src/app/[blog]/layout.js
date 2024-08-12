@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
 
 
-export default function SideSecondLayout() {
+export default function BlogLayout({children}) {
 
     // router
     const router = useRouter();
@@ -26,11 +26,8 @@ export default function SideSecondLayout() {
 
     return (
     <>
-        <div className="secondSidebar" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
-            <div className="secondUpper">
-                    <span>Recent</span>
-                    <div style={{width: "130px"}}></div>
-            </div>
+        <div className="blog" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
+            {children}
         </div>
     </>
     );

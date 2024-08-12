@@ -1,10 +1,10 @@
 import styles from "../page.module.css";
 
-export default function Contents() {
+export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        jude 
+        hello world
       </div>
     </main>
   );

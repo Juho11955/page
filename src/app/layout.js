@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import AppLayout from "../layout/AppLayout";
+import "@/assets/css/layout.css"
+import SidebarLayout from "@/layout/root/SidebarLayout";
+import MainLayout from "@/layout/root/MainLayout";
+import React from "react";
 import { StoreWrapper } from "@/store/provider/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,11 +13,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <StoreWrapper>
-          <AppLayout>
-            {children}
-          </AppLayout>
+          <SidebarLayout />
+            <MainLayout>
+              {children}
+            </MainLayout>
         </StoreWrapper>
       </body>
     </html>
   );
 }
+

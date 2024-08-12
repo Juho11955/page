@@ -1,4 +1,4 @@
-import styles from "../../../page.module.css";
+import styles from "../../page.module.css";
 
 export default function Page(params) {
 
@@ -7,7 +7,7 @@ export default function Page(params) {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        {params.params.dir}|
+        {params.params.blog}
         {params.params.page}
       </div>
     </main>

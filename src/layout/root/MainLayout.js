@@ -2,8 +2,11 @@
 
 import "@/assets/css/layout.css"
 import { useStore } from "@/hooks/useStore";
+import { observer } from "mobx-react";
+import HeaderLayout from "./HeaderLayout";
+import FooterLayout from "./FooterLayout";
 
-export default function MainLayout({ children }) {
+function MainLayout({ children }) {
 
     //store
     const {
@@ -13,10 +16,12 @@ export default function MainLayout({ children }) {
     return (
         <>
             <div className="main" style={{backgroundColor: `${mode_main}`, color: `${mode_font}`}}>
-                {/* <div className="contents"> */}
-                    {children}
-                {/* </div> */}
+                <HeaderLayout/>
+                    {children}  
+                <FooterLayout/>
             </div>
         </>
     );
 }
+
+export default observer(MainLayout);

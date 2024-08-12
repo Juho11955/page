@@ -4,11 +4,8 @@ import "@/assets/css/layout.css"
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
-import HeaderLayout from "@/layout/HeaderLayout";
-import FooterLayout from "@/layout/FooterLayout";
 
-
-export default function SideSecondLayout({children}) {
+export default function PageLayout({children}) {
 
     // router
     const router = useRouter();
@@ -28,10 +25,8 @@ export default function SideSecondLayout({children}) {
 
     return (
     <>
-        <div className="main_contents" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
-            <HeaderLayout />
-                {children}
-            <FooterLayout />
+        <div className="page" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
+            {children}
         </div>
     </>
     );

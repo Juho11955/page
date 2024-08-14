@@ -61,13 +61,16 @@ li:hover {
 .main {
     margin-left: 250px;
     width: auto;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
 }
 
 /* header */
 .header {    
-    border: 1px;
+    /* border: 1px;
     border-color: orange;
-    border-style: solid;
+    border-style: solid; */
     height: 60px;
     width: auto;
     position: relative;
@@ -122,17 +125,37 @@ li:hover {
     cursor: pointer;
 }
 
+/* blog */
+.blog {
+    height: auto;
+}
+
 
 /* footer */
 .footer {
-    border: 1px;
+    /* border: 1px;
     border-color: rgb(63 63 63);
-    border-style: solid;
+    border-style: solid; */
 
     border-top: 1px rgb(63 63 63) solid;
     height: 100px;
     width: auto;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+
+
     /* margin-left: 300px; */
     background-color: rgb(26 26 26);
+}
+
+/* second side bar */
+.secondBar {
+    /* border-right: 1px;
+    border-color: rgb(63 63 63);
+    border-style: solid; */
+    border-right: 1px rgb(63 63 63) solid;
+    width: 250px;
+    height: 100%;
+    position: relative;
+    /* background-color: rgb(20 20 20);     */
 }

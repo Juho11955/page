@@ -4,8 +4,9 @@ import "@/assets/css/layout.css"
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
+import SecondSidebar from "@/layout/blog/SecondSidebar";
 
-export default function PageLayout({children}) {
+export default function PageLayout({children}, params) {
 
     // router
     const router = useRouter();
@@ -25,8 +26,10 @@ export default function PageLayout({children}) {
 
     return (
     <>
-        <div className="page" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
-            {children}
+        <div className="page">
+            <SecondSidebar params={params}>
+                {children}
+            </SecondSidebar>
         </div>
     </>
     );

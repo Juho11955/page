@@ -17,7 +17,7 @@ function MainLayout({ children }) {
         <>
             <div className="main" style={{backgroundColor: `${mode_main}`, color: `${mode_font}`}}>
                 <HeaderLayout/>
-                    {children}  
+                    {children}  sf
                 <FooterLayout/>
             </div>
         </>

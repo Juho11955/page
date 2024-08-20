@@ -32,7 +32,7 @@ function SecondSidebarLayout(params) {
         <>
             <div className="secondBar" style={{backgroundColor: `${mode_side}`, borderRight: `${mode_border}`, color: `${mode_font}`}}>
                 <div className="secondUpper">
-                    <span>{params.params.dir}</span>
+                    <span></span>
                 </div>
                 <div className="wrapper_list">
                     <br/>

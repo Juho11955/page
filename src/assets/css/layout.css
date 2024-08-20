@@ -63,6 +63,25 @@ li:hover {
     width: auto;
     height: 70%;
     display: flex;
+    flex-direction: column;
+}
+
+.array {
+    margin-left: 250px;
+    width: auto;
+    height: 70%;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+.widthArray {
+    width: auto;
+    height: 70%;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
     flex-direction: row;
 }
 
@@ -140,7 +159,7 @@ li:hover {
     border-top: 1px rgb(63 63 63) solid;
     height: 100px;
     width: auto;
-    position: absolute;
+    position: relative;
     bottom: 0;
 
 
@@ -158,4 +177,16 @@ li:hover {
     height: 100%;
     position: relative;
     /* background-color: rgb(20 20 20);     */
+}
+
+/* page */
+.page {
+    border: 1px;
+    border-color: salmon;
+    border-style: solid;
+
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-direction: rows;
 }

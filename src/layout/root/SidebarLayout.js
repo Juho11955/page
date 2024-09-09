@@ -63,7 +63,7 @@ function SidebarLayout() {
                                     <li key={el.id}>
                                         <img style={{width: "14px", borderRadius: "70%", overflow: "hidden"}} src={el.src}/>
                                         &nbsp;&nbsp;
-                                        <span onClick={() => router.push('/contents')}>{el.name}</span>
+                                        <span onClick={() => router.push('/contents/1')}>{el.name}</span>
                                     </li>
                                 </div>
                             )}

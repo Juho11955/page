@@ -3,8 +3,9 @@
 import "@/assets/css/layout.css"
 import { useStore } from "@/hooks/useStore";
 import React from "react";
+import { observer } from "mobx-react";
 
-export default function FooterLayout() {
+function FooterLayout() {
 
     // store
     const {
@@ -19,3 +20,5 @@ export default function FooterLayout() {
         </>
     );
 }
+
+export default observer(FooterLayout);

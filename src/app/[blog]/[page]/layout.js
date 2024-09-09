@@ -4,15 +4,20 @@ import "@/assets/css/layout.css"
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
+import { observer } from "mobx-react";
+import Page from "./page";
+import SecondSidebar from "@/layout/root/SecondSidebar";
+import HeaderLayout from "@/layout/root/HeaderLayout";
+import FooterLayout from "@/layout/root/FooterLayout";
 
-export default function PageLayout({children}, params) {
+function PageLayout({children}, params) {
 
     // router
     const router = useRouter();
 
     // store
     const {
-        LayoutStore: { modeStyle, setModeStyle, mode_side, mode_border, mode_font},
+        LayoutStore: { mode_main, mode_font },
     } = useStore();
 
     // get list data
@@ -25,9 +30,16 @@ export default function PageLayout({children}, params) {
 
     return (
     <>
-        <div className="page">
-                {children}
+        <div className="page" style={{backgroundColor: `${mode_main}`, color: `${mode_font}`}}>
+            <SecondSidebar/>
+            <div className="inner_page">
+                <HeaderLayout/>
+                    {children}
+                <FooterLayout/>
+            </div>
         </div>
     </>
     );
 }
+
+export default observer(PageLayout);

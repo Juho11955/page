@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import { useStore } from "@/hooks/useStore";
 import { observer } from "mobx-react";
 
-function SecondSidebarLayout(params) {
+function SecondSidebarLayout() {
 
     // router
     const router = useRouter();
@@ -38,13 +38,13 @@ function SecondSidebarLayout(params) {
                     <br/>
                     <div className="default_list">
                         <ul>
-              
+
                         </ul>
                     </div>
                     <br/>
                     <div className="list">
                         <div style={{marginBottom: "13px"}}>
-                            <span>Category</span>
+                            <span></span>
                         </div>
                         <ul>
                             {mainList?.map((el, i) => 

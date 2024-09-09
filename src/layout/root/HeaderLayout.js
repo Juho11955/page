@@ -5,12 +5,13 @@ import { FaRegSun, FaRegMoon } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import React from "react";
 import { useStore } from "@/hooks/useStore";
+import { observer } from "mobx-react";
 
-export default function HeaderLayout() {
+function HeaderLayout() {
 
     //store
     const {
-        LayoutStore: { modeStyle, setModeStyle, mode_font, mode_main},
+        LayoutStore: { modeStyle, setModeStyle, mode_font, mode_main },
     } = useStore();
     
     return ((
@@ -31,3 +32,5 @@ export default function HeaderLayout() {
         </>
     ));
 }
+
+export default observer(HeaderLayout);
